@@ -1,7 +1,7 @@
 body
 {
     background-color: gray;
-    background-image: url('backgroudimage/2.jpg');
+    background-image: url("../backgroudimage/2.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position-x:70% ;}
@@ -14,9 +14,14 @@ div#top
     border:2px solid;
     width: 105%;
     }
-div#middle
-{   height: 500px;
+div#NAV
+{   height: 100px;
     width: 100%   
+}
+div#body
+{
+    height: 500px;
+    width: 100%;
 }
 div#end
 {
