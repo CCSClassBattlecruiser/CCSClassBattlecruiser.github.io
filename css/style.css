@@ -4,15 +4,15 @@ body
     background-image: url("../backgroudimage/2.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position-x:70% ;}
+    background-position-x:70% ;
+    margin: 0px;
+    }
 div#top
     {
-        background-color:darkslateblue;
-    position: relative;
-    top:-31px;    
-    left: -10px;
+    background-color:darkslateblue;
+    position: relative;    
     border:2px solid;
-    width: 105%;
+    width: 100%;
     }
 div#NAV
 {   height: 100px;
@@ -30,8 +30,8 @@ div#end
     background-color: gray;
     }
 img#planeptune
-{position:relative;
-left:-10px;
-top: -33px;
-width: 105%;
+{
+position:relative;
+
+width: 100%;
     }

@@ -20,7 +20,7 @@
 
 .menu li#neptune {
     width: 20%;
-    background-color: rgba(52,18,122,0.7);
+    background-color: rgba(52,18,122,0.5);
 	position: absolute;
 	list-style: none;
 	float: left;
@@ -30,7 +30,7 @@
 .menu li#nepgear {
     width: 20%;
     min-block-size: 20%;
-    background-color: rgba(248,135,249,0.7);
+    background-color: rgba(248,135,249,0.5);
     left: 20%;
 	position: absolute;
 	list-style: none;
@@ -40,7 +40,7 @@
 }
 .menu li#vert {
     width: 20%;
-    background-color: rgba(0,255,0,0.7);
+    background-color: rgba(0,255,0,0.5);
 	position: absolute;
      left: 40%;
 	list-style: none;
@@ -50,7 +50,7 @@
 }
 .menu li#blanc {
     width: 20%;
-    background-color: rgba(255,255,255,0.7);
+    background-color: rgba(255,255,255,0.5);
 	position: absolute;
     left: 60%;
 	list-style: none;
@@ -60,7 +60,7 @@
 }
 .menu li#noire {
     width: 20%;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.5);
 	position: absolute;
     left: 80%;
 	list-style: none;
@@ -109,13 +109,13 @@
 
 .menu ul {
 	position: absolute;
+	width: 100%;
 	top: 80px;
 	left: 0;
 
 	opacity: 0;
 	
-	background: #1f2024;
-
+	background:inherit;
 	-webkit-border-radius: 0 0 5px 5px;
 	-moz-border-radius: 0 0 5px 5px;
 	border-radius: 0 0 5px 5px;
