@@ -4,10 +4,10 @@ function daychange()
     element = document.getElementById('planeptune')
     if(6<time<20)
     {
-            element.src="/backgroudimage/1-day.jpg";
+            element.src="backgroudimage/1-day.jpg";
            }
         else
            {
-            element.src="/backgroudimage/1-night.jpg";
+            element.src="backgroudimage/1-night.jpg";
            }
     }
