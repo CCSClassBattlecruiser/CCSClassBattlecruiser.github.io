@@ -1,12 +1,33 @@
-top
+body
 {
-    background-image: url('/backgroudimage/C面.jpg')
-    
-}
-middle
-{}
-end
+    background-color: darkviolet;
+    background-image: url('/backgroudimage/2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x:70% ;}
+    div#top
+    {
+        background-color:darkslateblue;
+    position: relative;
+    top:-31px;    
+    left: -10px;
+    border:2px solid;
+    width: 105%;
+    }
+div#middle
+{ 
+    height: 5000px;
+    width: 100%;
+    }
+div#end
 {
+    height:50%;
+    width: 100%;
     background-color: gray;
-
-}
+    }
+img#planeptune
+{position:relative;
+left:-10px;
+top: -33px;
+width: 105%;
+    }
