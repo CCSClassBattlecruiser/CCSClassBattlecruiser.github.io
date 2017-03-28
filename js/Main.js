@@ -5,13 +5,12 @@ var __musicBaseURL = './music';
 
 var __models = [
   {name: 'Nepgear',
-   url:  __modelBaseURL + '/default/Nepgear.pmd',
+   url:  __modelBaseURL + '/nepgear/Nepgear.pmd',
    eye:  [0, 10, -22]},
    {name: 'Neptune',
    url:  __modelBaseURL + '/neptune/neptune.pmd',
    eye:  [0, 10, -22],
    selected: true},
-
 ];
 
 var __motions = [
@@ -28,6 +27,11 @@ var __motions = [
    music: {url: __musicBaseURL + '/wavefile_short.mp3',
            offset: 320},
    selected: true},
+   {name:'Elysium',
+   url:[__motionBaseURL+'/Elysium.vmd'],
+   eye:[0,10,-22],
+   music:{url:__musicBaseURL+'/Elysium.mp3'},
+   }
 /*
   {name: 'Koi Wa Kitto Kyujoushou',
    url:  [__motionBaseURL + '/koiwakitto.vmd',
