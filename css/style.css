@@ -18,10 +18,14 @@ div#NAV
 {   height: 100px;
     width: 100%   
 }
-div#body
+div#middle
 {
-    height: 500px;
+    height: 1000px;
     width: 100%;
+    background-color: rgba(255, 255, 255, 0.8)
+}
+canvas
+{border: 2px solid;
 }
 div#end
 {

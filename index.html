@@ -4,13 +4,28 @@
     <meta charset="utf-8" />
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/nav.css">
-<script src= "js/script.js"></script>
 
+<script src= "js/script.js"></script>
+<script type="text/javascript" src="lib/glMatrix-0.9.5.min.js"></script>
+<script type="text/javascript" src="lib/ammo.js"></script>
+<script type="text/javascript" src="lib/whammy.js"></script>
+<script type="text/javascript" src="src/Inherit.js"></script>
+<script type="text/javascript" src="src/WebGL.js"></script>
+<script type="text/javascript" src="src/Utility.js"></script>
+<script type="text/javascript" src="src/Pmd.js"></script>
+<script type="text/javascript" src="src/Vmd.js"></script>
+<script type="text/javascript" src="src/PmdView.js"></script>
+<script type="text/javascript" src="src/PmdModelView.js"></script>
+<script type="text/javascript" src="src/Physics.js"></script>
+<script type="text/javascript" src="src/FileParser.js"></script>
+<script type="text/javascript" src="src/PmdFileParser.js"></script>
+<script type="text/javascript" src="src/VmdFileParser.js"></script>
+<script type="text/javascript" src="js/Main.js"></script>
 <title>BasilicomOfPlaneptune</title>  
 
 </head>    
-<body onload="daychange()"> 
-<div id="top">
+<body  onload="__init()"> 
+<div id="top" onload="daychange()">
 <audio src="music/FlyHigh.mp3" controls="controls" id="musicplayer">
 </audio>
 </div>
@@ -58,9 +73,57 @@
 		</ul>
     </li>
 
-</ul> <!-- end .menu -->
+</ul> 
 </div>
-<div id="body">
+<div id="middle">
+
+<p>
+<button id="loadModelButton" onclick="__loadModelButtonClicked()">
+load model
+</button>
+<select id="modelSelect"></select>
+<br />
+
+<button id="loadMotionButton" onclick="__loadMotionButtonClicked()">
+load motion
+</button>
+<select id="motionSelect" onchange="__motionSelectChanged()"></select>
+<select id="audioSelect" onchange="__audioSelectChanged()"></select><br />
+<input type="checkbox" id="videoGenerationCheckbox"
+ onchange="__videoGenerationCheckboxChanged()" />
+generate a video
+<span id="videoSpan"></span>
+</p>
+
+<p>
+<textarea id="statusArea" readonly cols="50" rows="5">
+</textarea>
+<span id="fpsSpan"></span><br/>
+</p>
+
+<p>
+<select id="physicsSelect"   onchange="__physicsSelectChanged()"></select>
+<select id="ikSelect"        onchange="__ikSelectChanged()"></select>
+<select id="morphSelect"     onchange="__morphSelectChanged()"></select>
+<select id="stageSelect"     onchange="__stageSelectChanged()"></select>
+<select id="sphereMapSelect" onchange="__sphereMapSelectChanged()"></select>
+<br />
+<select id="shadowMappingSelect"
+ onchange="__shadowMappingSelectChanged()"></select>
+<select id="edgeSelect" onchange="__edgeSelectChanged()"></select>
+<select id="skinningSelect" onchange="__skinningSelectChanged()"></select>
+<select id="runTypeSelect"  onchange="__runTypeSelectChanged()"></select>
+<br />
+<select id="effectSelect"  onchange="__effectSelectChanged()"></select>
+<select id="lightingSelect" onchange="__lightingSelectChanged()"></select>
+Light <!--Color-->Strength
+<input type="range" id="lightColorRange" min="0.0" max="2.0" step="0.1"
+ value="1.0" onchange="__lightColorRangeChanged()"/>
+<span id="lightColorSpan"></span>
+</p>
+
+<canvas id="mainCanvas" width="640" height="480"></canvas><br />
+
 </div>
 
 <div id = "end">
