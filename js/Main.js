@@ -9,7 +9,8 @@ var __models = [
    eye:  [0, 10, -22]},
    {name: 'Neptune',
    url:  __modelBaseURL + '/neptune/neptune.pmd',
-   eye:  [0, 10, -22]},
+   eye:  [0, 10, -22],
+   selected: true},
 
 ];
 
@@ -124,12 +125,11 @@ var __morphs = [
 
 var __stages = [
   {name: 'Stage OFF',
-   value: PMDView._STAGE_OFF},
+   value: PMDView._STAGE_OFF,selected: true},
   {name: 'Stage 1',
    value: PMDView._STAGE_1},
   {name: 'Stage 2',
-   value: PMDView._STAGE_2,
-   selected: true},
+   value: PMDView._STAGE_2},
   {name: 'Stage 3',
    value: PMDView._STAGE_3},
 ];
@@ -193,10 +193,10 @@ var __lightings = [
   {name: 'Light OFF',
    value: PMDView._LIGHTING_OFF},
   {name: 'Light ON',
-   value: PMDView._LIGHTING_ON},
-  {name: 'Light ON w/ toon',
-   value: PMDView._LIGHTING_ON_WITH_TOON,
+   value: PMDView._LIGHTING_ON,
    selected: true},
+  {name: 'Light ON w/ toon',
+   value: PMDView._LIGHTING_ON_WITH_TOON},
 ];
 
 

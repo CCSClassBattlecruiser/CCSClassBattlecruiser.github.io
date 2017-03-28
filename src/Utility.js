@@ -1,3 +1,6 @@
+
+
+
 /**
  * @param {Integer} type bin->2, oct->8, degit->10, hex->16
  * @param {Integer} num

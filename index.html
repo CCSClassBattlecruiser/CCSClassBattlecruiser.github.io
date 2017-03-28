@@ -21,6 +21,7 @@
 <script type="text/javascript" src="src/PmdFileParser.js"></script>
 <script type="text/javascript" src="src/VmdFileParser.js"></script>
 <script type="text/javascript" src="js/Main.js"></script>
+
 <title>BasilicomOfPlaneptune</title>  
 
 </head>    
@@ -76,13 +77,17 @@
 </ul> 
 </div>
 <div id="middle">
+<div id="setbottom"   onclick="isHidden('settingarea')">
+Setting area
+</div>
 
+<div id="settingarea" style="display:none" >
 <p>
 <button id="loadModelButton" onclick="__loadModelButtonClicked()">
 load model
 </button>
 <select id="modelSelect"></select>
-<br />
+<br/>
 
 <button id="loadMotionButton" onclick="__loadMotionButtonClicked()">
 load motion
@@ -122,8 +127,10 @@ Light <!--Color-->Strength
 <span id="lightColorSpan"></span>
 </p>
 
-<canvas id="mainCanvas" width="640" height="480"></canvas><br />
+<br />
 
+</div>
+<canvas id="mainCanvas" width="1920" height="1080"></canvas>
 </div>
 
 <div id = "end">
