@@ -25,12 +25,12 @@ var __motions = [
    url:  [__motionBaseURL + '/wavefile_v2.vmd'],
    eye:  [0, 10, -22],
    music: {url: __musicBaseURL + '/wavefile_short.mp3',
-           offset: 320},
-   selected: true},
+           offset: 320}},
    {name:'Elysium',
    url:[__motionBaseURL+'/Elysium.vmd'],
    eye:[0,10,-22],
    music:{url:__musicBaseURL+'/Elysium.mp3'},
+   selected: true
    }
 /*
   {name: 'Koi Wa Kitto Kyujoushou',
@@ -161,10 +161,9 @@ var __shadowMappings = [
 
 var __edges = [
   {name: 'Edge OFF',
-   value: PMDView._EDGE_OFF},
+   value: PMDView._EDGE_OFF,selected: true},
   {name: 'Edge ON',
-   value: PMDView._EDGE_ON,
-   selected: true},
+   value: PMDView._EDGE_ON},
 ];
 
 
