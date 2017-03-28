@@ -11,6 +11,11 @@ var __models = [
    url:  __modelBaseURL + '/neptune/neptune.pmd',
    eye:  [0, 10, -22],
    selected: true},
+   {
+     name:'iris',
+     url:__modelBaseURL+'/iris/iris.pmd',
+     eye:[0,10,-22]
+   }
 ];
 
 var __motions = [
