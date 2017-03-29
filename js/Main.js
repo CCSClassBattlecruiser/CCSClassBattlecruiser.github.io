@@ -13,7 +13,7 @@ var __models = [
    selected: true},
    {
      name:'iris',
-     url:__modelBaseURL+'/iris/iris.pmd',
+     url:__modelBaseURL+'/iris/Iris.pmd',
      eye:[0,10,-22]
    }
 ];
