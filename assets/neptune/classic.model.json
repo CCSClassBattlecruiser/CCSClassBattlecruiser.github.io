@@ -1,0 +1,171 @@
+{
+  "version": "Live2DViewerEX Config 1.0",
+  "model": "classic.moc",
+  "textures": [
+    "classic.1024/neptune_texture_00.png",
+    "classic.1024/neptune_texture_01.png",
+    "classic.1024/neptune_texture_02.png"
+  ],
+  "layout": {
+    "center_x": 0.0,
+    "center_y": -0.5,
+    "width": 3.35
+  },
+  "motions": {
+    "idle": [
+      {
+        "file": "motions/idle/nep_idling_1.mtn"
+      },
+      {
+        "file": "motions/idle/nep_idling_2.mtn"
+      },
+      {
+        "file": "motions/idle/nep_idling_3.mtn"
+      }
+    ],
+    "flick": [
+      {
+        "file": "motions/flick/nep_slide_boobs_1.mtn",
+        "sound": "motions/flick/nep_slide_boobs_1.mp3"
+      },
+      {
+        "file": "motions/flick/nep_slide_boobs_2.mtn",
+        "sound": "motions/flick/nep_slide_boobs_2.mp3"
+      },
+      {
+        "file": "motions/flick/nep_slide_boobs_3.mtn",
+        "sound": "motions/flick/nep_slide_boobs_3.mp3"
+      },
+      {
+        "file": "motions/flick/nep_slide_head_1.mtn",
+        "sound": "motions/flick/nep_slide_head_1.mp3"
+      },
+      {
+        "file": "motions/flick/nep_slide_head_2.mtn",
+        "sound": "motions/flick/nep_slide_head_2.mp3"
+      },
+      {
+        "file": "motions/flick/nep_slide_head_3.mtn",
+        "sound": "motions/flick/nep_slide_head_3.mp3"
+      }
+    ],
+    "shake": [
+      {
+        "file": "motions/shake/nep_shake_1.mtn",
+        "sound": "motions/shake/nep_shake_1.mp3"
+      },
+      {
+        "file": "motions/shake/nep_shake_2.mtn",
+        "sound": "motions/shake/nep_shake_2.mp3"
+      },
+      {
+        "file": "motions/shake/nep_shake_3.mtn",
+        "sound": "motions/shake/nep_shake_3.mp3"
+      },
+      {
+        "file": "motions/shake/neptune_base_kurakura01.mtn"
+      }
+    ],
+    "tap": [
+      {
+        "file": "motions/tap/nep_touch_belly_1.mtn",
+        "sound": "motions/tap/nep_touch_belly_1.mp3"
+      },
+      {
+        "file": "motions/tap/nep_touch_belly_2.mtn",
+        "sound": "motions/tap/nep_touch_belly_2.mp3"
+      },
+      {
+        "file": "motions/tap/nep_touch_belly_3.mtn",
+        "sound": "motions/tap/nep_touch_belly_3.mp3"
+      },
+      {
+        "file": "motions/tap/nep_touch_boobs_1.mtn",
+        "sound": "motions/tap/nep_touch_boobs_1.mp3"
+      },
+      {
+        "file": "motions/tap/nep_touch_boobs_2.mtn",
+        "sound": "motions/tap/nep_touch_boobs_2.mp3"
+      },
+      {
+        "file": "motions/tap/nep_touch_boobs_3.mtn",
+        "sound": "motions/tap/nep_touch_boobs_3.mp3"
+      },
+      {
+        "file": "motions/tap/nep_touch_classic.mtn",
+        "sound": "motions/tap/nep_touch_classic.mp3"
+      },
+      {
+        "file": "motions/tap/nep_touch_head_1.mtn",
+        "sound": "motions/tap/nep_touch_head_1.mp3"
+      },
+      {
+        "file": "motions/tap/nep_touch_head_2.mtn",
+        "sound": "motions/tap/nep_touch_head_2.mp3"
+      },
+      {
+        "file": "motions/tap/nep_touch_head_3.mtn",
+        "sound": "motions/tap/nep_touch_head_3.mp3"
+      },
+      {
+        "file": "motions/tap/nep_touch_head_4.mtn",
+        "sound": "motions/tap/nep_touch_head_4.mp3"
+      },
+      {
+        "file": "motions/tap/nep_touch_other_1.mtn",
+        "sound": "motions/tap/nep_touch_other_1.mp3"
+      },
+      {
+        "file": "motions/tap/nep_touch_other_2.mtn",
+        "sound": "motions/tap/nep_touch_other_2.mp3"
+      },
+      {
+        "file": "motions/tap/nep_touch_other_3.mtn",
+        "sound": "motions/tap/nep_touch_other_3.mp3"
+      },
+      {
+        "file": "motions/tap/nep_touch_santa.mtn",
+        "sound": "motions/tap/nep_touch_santa.mp3"
+      },
+      {
+        "file": "motions/tap/nep_touch_swim.mtn",
+        "sound": "motions/tap/nep_touch_swim.mp3"
+      }
+    ]
+  },
+  "expressions": [
+    {
+      "name": "f01.exp.json",
+      "file": "expressions/f01.exp.json"
+    },
+    {
+      "name": "f02.exp.json",
+      "file": "expressions/f02.exp.json"
+    },
+    {
+      "name": "f03.exp.json",
+      "file": "expressions/f03.exp.json"
+    },
+    {
+      "name": "f04.exp.json",
+      "file": "expressions/f04.exp.json"
+    },
+    {
+      "name": "f05.exp.json",
+      "file": "expressions/f05.exp.json"
+    },
+    {
+      "name": "f06.exp.json",
+      "file": "expressions/f06.exp.json"
+    },
+    {
+      "name": "f07.exp.json",
+      "file": "expressions/f07.exp.json"
+    },
+    {
+      "name": "f08.exp.json",
+      "file": "expressions/f08.exp.json"
+    }
+  ],
+  "physics": "physics.json"
+}

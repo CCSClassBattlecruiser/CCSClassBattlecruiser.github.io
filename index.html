@@ -1,141 +1,41 @@
-<!DOCTYPE html>
-<html>    
-<head>     
-    <meta charset="utf-8" />
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="stylesheet" type="text/css" href="css/nav.css">
-
-<script src= "js/script.js"></script>
-<script type="text/javascript" src="lib/glMatrix-0.9.5.min.js"></script>
-<script type="text/javascript" src="lib/ammo.js"></script>
-<script type="text/javascript" src="lib/whammy.js"></script>
-<script type="text/javascript" src="src/Inherit.js"></script>
-<script type="text/javascript" src="src/WebGL.js"></script>
-<script type="text/javascript" src="src/Utility.js"></script>
-<script type="text/javascript" src="src/Pmd.js"></script>
-<script type="text/javascript" src="src/Vmd.js"></script>
-<script type="text/javascript" src="src/PmdView.js"></script>
-<script type="text/javascript" src="src/PmdModelView.js"></script>
-<script type="text/javascript" src="src/Physics.js"></script>
-<script type="text/javascript" src="src/FileParser.js"></script>
-<script type="text/javascript" src="src/PmdFileParser.js"></script>
-<script type="text/javascript" src="src/VmdFileParser.js"></script>
-<script type="text/javascript" src="js/Main.js"></script>
-
-<title>BasilicomOfPlaneptune</title>  
-
-</head>    
-<body  onload="__init()"> 
-<div id="top" onload="daychange()">
-<audio src="music/FlyHigh.mp3" controls="controls" id="musicplayer">
-</audio>
-</div>
-
-<img id ="planeptune" src="backgroudimage/1-night.jpg">
-<div id= "NAV">
-<ul class="menu">
-
-	<li id="neptune"><a href="#">Neptune</a><img src="backgroudimage/neptune.png">
-    <ul>
-			<li><a href="#" class="null"></a></li>
-			<li><a href="#" class="null1"></a></li>
-			<li><a href="#" class="null2"></a></li>
-		</ul>
-    </li>
-    
-	<li id="nepgear"><a href="#">nepgear</a><img src="backgroudimage/nepgear.png">
-    <ul>
-			<li><a href="#" class="null"></a></li>
-			<li><a href="#" class="null1"></a></li>
-			<li><a href="#" class="null2"></a></li>
-		</ul>
-    </li>
-	<li id="vert"><a href="#">vert</a><img src="backgroudimage/vert.png">
-
-		<ul>
-			<li><a href="#" class="null"></a></li>
-			<li><a href="#" class="null1"></a></li>
-			<li><a href="#" class="null2"></a></li>
-		</ul>
-
-	</li>
-	<li id="blanc"><a href="#">blanc</a><img src="backgroudimage/blanc.png">
-    <ul>
-			<li><a href="#" class="null"></a></li>
-			<li><a href="#" class="null1"></a></li>
-			<li><a href="#" class="null2"></a></li>
-		</ul>
-    </li>
-	<li id="noire"><a href="#">noire</a><img src="backgroudimage/noire.png">
-    <ul>
-			<li><a href="#" class="null"></a></li>
-			<li><a href="#" class="null1"></a></li>
-			<li><a href="#" class="null2"></a></li>
-		</ul>
-    </li>
-
-</ul> 
-</div>
-<div id="middle">
-<div id="setbottom"   onclick="isHidden('settingarea')">
-Setting area
-</div>
-
-<div id="settingarea" style="display:none" >
-<p>
-<button id="loadModelButton" onclick="__loadModelButtonClicked()">
-load model
-</button>
-<select id="modelSelect"></select>
-<br/>
-
-<button id="loadMotionButton" onclick="__loadMotionButtonClicked()">
-load motion
-</button>
-<select id="motionSelect" onchange="__motionSelectChanged()"></select>
-<select id="audioSelect" onchange="__audioSelectChanged()"></select><br />
-<input type="checkbox" id="videoGenerationCheckbox"
- onchange="__videoGenerationCheckboxChanged()" />
-generate a video
-<span id="videoSpan"></span>
-</p>
-
-<p>
-<textarea id="statusArea" readonly cols="50" rows="5">
-</textarea>
-<span id="fpsSpan"></span><br/>
-</p>
-
-<p>
-<select id="physicsSelect"   onchange="__physicsSelectChanged()"></select>
-<select id="ikSelect"        onchange="__ikSelectChanged()"></select>
-<select id="morphSelect"     onchange="__morphSelectChanged()"></select>
-<select id="stageSelect"     onchange="__stageSelectChanged()"></select>
-<select id="sphereMapSelect" onchange="__sphereMapSelectChanged()"></select>
-<br />
-<select id="shadowMappingSelect"
- onchange="__shadowMappingSelectChanged()"></select>
-<select id="edgeSelect" onchange="__edgeSelectChanged()"></select>
-<select id="skinningSelect" onchange="__skinningSelectChanged()"></select>
-<select id="runTypeSelect"  onchange="__runTypeSelectChanged()"></select>
-<br />
-<select id="effectSelect"  onchange="__effectSelectChanged()"></select>
-<select id="lightingSelect" onchange="__lightingSelectChanged()"></select>
-Light <!--Color-->Strength
-<input type="range" id="lightColorRange" min="0.0" max="2.0" step="0.1"
- value="1.0" onchange="__lightColorRangeChanged()"/>
-<span id="lightColorSpan"></span>
-</p>
-
-<br />
-
-</div>
-<canvas id="mainCanvas" width="1920" height="1080"></canvas>
-</div>
-
-<div id = "end">
-    This is a test contect infromation 
-</div>
-
-</body>     
-</html>    
+<html>
+    <head>
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
+        <title>Pixi-Live2D</title>
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="format-detection" content="telphone=no, email=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui" />
+        <!-- UC -->
+        <meta name="screen-orientation" content="landscape">
+        <meta name="full-screen" content="yes">
+        <meta name="browsermode" content="application"/>
+        <!-- QQ -->
+        <meta name="x5-orientation" content="landscape"/>
+        <meta name="x5-fullscreen" content="true"/>
+        <meta name="x5-page-mode" content="app">
+        <!-- windows phone 点击无高光 -->
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="MobileOptimized" content="320" />
+        <script type="text/javascript" src="live2d.min.js" charset="utf-8"></script>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                border: 0;
+            }
+            body {
+                background: grey;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="app"></div>
+        <p>click head to sing a song; click body to emit a motion<p>
+        <script type="text/javascript" src="index.js" charset="utf-8"></script>
+    </body>
+</html>
