@@ -1,5 +1,5 @@
 const PIXI = require('pixi.js');
-import '../src/index';
+import './src/index';
 
 const renderer = new PIXI.WebGLRenderer(800, 600);
 document.getElementById('app').appendChild(renderer.view);
